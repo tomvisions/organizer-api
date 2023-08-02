@@ -1,4 +1,2 @@
 .dockerignore
 Dockerfile
-docker-compose.yml
-mysql-data
