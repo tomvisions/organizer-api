@@ -11,3 +11,14 @@ class User(UserBase, table=True):
 
 class UserCreate(UserBase):
     pass
+
+class EventBase(SQLModel):
+    name: str
+    description: str
+
+class Event(EventBase, table=True):
+    id: int = Field(default=None, nullable=False, primary_key=True)
+
+
+class EventCreate(EventBase):
+    pass
